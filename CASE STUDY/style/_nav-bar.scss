@@ -1,0 +1,32 @@
+.nav-bar{
+    width:100%;
+    min-width: $min-width;
+    height:40px;
+    background-color: $nav-bar-bg;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    .nav-bar-inner{
+        height:100%;
+        width:$web-width;
+        display: flex;
+        margin:0px $web-margin-left-right;
+        li{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                font-size: 15px;
+                line-height: 40px;
+                color:#fff;
+
+            }
+        }
+        li:hover{
+            background-color: #980d17;
+        }
+    }
+}

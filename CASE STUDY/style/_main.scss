@@ -1,0 +1,164 @@
+.main {
+  width: 100%;
+  min-width:1120px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  .main-inner {
+    width: 1120px; 
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    .news-content {
+      width: 720px;
+      height: 100%;
+      padding: 20px;
+      .top-news {
+        width: 720px;
+        border-bottom: 3px solid #ff5e34;
+        .hot-news {
+          display: flex;
+          height: 460px;
+          width: 720px;
+          display: flex;
+          justify-content: space-between;
+          .hot-news-item:first-child {
+            width: 460px;
+            height: 100%;
+            h2 {
+              font-size: 26px;
+              font-weight: 400;
+              padding-top: 10px;
+            }
+            p {
+              margin: 10px 0;
+              font-size: 14px;
+              line-height: 20px;
+              color: #444;
+            }
+          }
+          .hot-news-item:last-child {
+            width: 220px;
+            height: 100%;
+            h2 {
+              width: 100%;
+              height: 142px;
+              a {
+                font-size: 17px;
+                color: #222;
+                display: inline-block;
+                height: 100%;
+                padding: 10px 10px 10px;
+                background-image: linear-gradient(#ebebeb, #fff);
+              }
+            }
+          }
+        }
+        .favorite-news {
+            width: 720px;
+            margin-top: 30px;
+            height: 261px;
+            .favorite-news-inner {
+              display: flex;
+              flex-direction: row;
+              .favorite-news-item {
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                height: 100%;
+                margin-right: 20px;
+                a {
+                  display: inline-block;
+                  width: 100%;
+                  height: 100%;
+                  font-size: 17px;
+                  color: #2d2d2d;
+                  font-weight: 400;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+            .favorite-news-switch {
+              width: 100%;
+              height: 16px;
+              margin-top: 15px;
+              display: flex;
+              justify-content: center;
+              img {
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                margin: 0 8px;
+              }
+            }
+          }
+      }
+      .news{
+        width:100%;
+        height:100%;
+        .news-item{
+            width:700px;
+            height:207.25px;
+            padding:25px 0;
+            display:flex;
+            border-bottom:1px solid #ebebeb;
+            .left{
+                
+                a{
+                    width:250px;
+                    height:100%;
+                    display:inline-block;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+               
+                
+            }
+            .right{
+                width:430px;
+                height:100%;
+                margin-left:20px;
+                .title{
+                    a{
+                        color:#333;
+                        font-size:20px;
+                        line-height:26px;
+                        margin-bottom:10px;
+                    }
+                    
+                }
+                .meta{
+                    margin-bottom: 13px;
+                    .category{
+                        font-size:14px;
+                        color:#41455e;
+                    }
+                    .time{
+                        font-size:14px;
+                        color:#777;
+                    }
+                }
+                .trim{
+                    color:#4d4d4d;
+                    line-height:18px;
+                    font-size:13px;
+                }
+            }
+        }
+    }
+      
+    }
+    .side-bar{
+      width: 300px;
+      padding-top:20px;
+    }
+  }
+  
+}

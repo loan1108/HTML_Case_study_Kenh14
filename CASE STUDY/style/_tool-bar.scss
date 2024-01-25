@@ -1,0 +1,59 @@
+.tool-bar {
+  width: 100vw;
+  min-width:$min-width;
+  height: 25px;
+  background-color: $tool-bar-bg;
+  display: flex;
+  justify-content: center;
+
+  .tool-bar-inner {
+    width: $web-width;
+    height: 100%;
+    margin:0px $web-margin-left-right;
+    .left {
+      a {
+        margin-right: 8px;
+        color: $tool-bar-color;
+        i {
+          color: #de2313;
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+          padding: 0 15px;
+        }
+      }
+    }
+
+    .right {
+      height: 100%;
+      .input-group {
+        height: 100%;
+
+        input {
+          height: 100%;
+          width: 154px;
+          border: none;
+          background-color: $tool-bar-bg;
+        }
+        input:focus-visible,
+        input:focus {
+          outline: none;
+          box-shadow: none;
+          border: none;
+        }
+        .search-btn {
+          height: 100%;
+          width: 24px;
+
+          span {
+            border: none;
+            background-color: $tool-bar-bg;
+            i {
+              color: $tool-bar-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

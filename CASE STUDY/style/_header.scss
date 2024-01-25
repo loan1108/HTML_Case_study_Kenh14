@@ -1,0 +1,45 @@
+.header{
+    width:100vw;
+    height:360px;
+    .top-header{
+        width:100%;
+        min-width:$min-width;
+        height:70px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        .top-header-inner{
+            width:$web-width;
+            height:100%;
+            display: flex;
+            margin:0px $web-margin-left-right;
+            .logo{
+                height:100%;
+                img{
+                    height:100%;
+                }
+            }
+            .trending-wrapper{
+                height:100%;
+                display: flex;
+                align-items: center;
+                margin-left:10px;
+                .trend-icon{
+                    color:#fff;
+                }
+                a{
+                    height:28px;
+                    font-size:14px;
+                    border:1px solid rgba(255,255,255,0.5);
+                    border-radius: 20px;
+                    padding: 0px 15px;
+                    margin:15px;
+                    color:#fff;
+                }
+                a:last-child{
+                    margin-left:0px;
+                }
+            }
+        }
+    }
+}
